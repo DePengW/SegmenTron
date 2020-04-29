@@ -1,6 +1,7 @@
 # 基于pytorch实现Pointrend的语义分割代码
 ## 介绍
-这个代码主要是实现了将Pointrend上采样模块的“渲染”运用到语义分割任务中。//
+这个代码主要是实现了将Pointrend上采样模块的“渲染”运用到语义分割任务中。
+
 Pointrend关键模块的详解请看博客：- [语义分割之PointRend论文与源码解读](https://blog.csdn.net/weixin_42028608/article/details/105379233)
 
 ![](docs/images/demo.png)
