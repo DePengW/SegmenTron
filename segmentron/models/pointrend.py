@@ -159,8 +159,8 @@ def sampling_points(mask, N, k=3, beta=0.75, training=True):
     主要思想：根据粗糙的预测结果，找出不确定的像素点
     :param mask: 粗糙的预测结果（out）   eg.[2, 19, 48, 48]
     :param N: 不确定点个数（train：N = 图片的尺寸/16, test: N = 8096）    eg. N=48
-    :param k: 超参
-    :param beta: 超参
+    :param k: 论文超参
+    :param beta: 论文超参
     :param training:
     :return: 不确定点的位置坐标  eg.[2, 48, 2]
     """
