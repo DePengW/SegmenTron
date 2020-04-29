@@ -48,7 +48,6 @@ CUDA_VISIBLE_DEVICES=0,1,2,3 ./tools/dist_train.sh ${CONFIG_FILE} ${GPU_NUM} [op
 ## 评估
 ### 使用单GPU训练进行评估
 你需要将你训练好的模型放于```TEST.TEST_MODEL_PATH```
-You can download trained model from model zoo table above, or train by yourself.
 ```
 CUDA_VISIBLE_DEVICES=0 python -u ./tools/eval.py --config-file configs/cityscapes_pointrend_deeplabv3_plus.yaml \
 TEST.TEST_MODEL_PATH your_test_model_path
@@ -59,9 +58,8 @@ TEST.TEST_MODEL_PATH your_test_model_path
 CUDA_VISIBLE_DEVICES=0,1,2,3 ./tools/dist_test.sh ${CONFIG_FILE} ${GPU_NUM} \
 TEST.TEST_MODEL_PATH your_test_model_path
 ```
-----
 
-## References
+## 参考
 - [SegmenTron](https://github.com/LikeLy-Journey/SegmenTron)
 - [PyTorch-Encoding](https://github.com/zhanghang1989/PyTorch-Encoding)
 - [detectron2](https://github.com/facebookresearch/detectron2)
